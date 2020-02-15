@@ -1,6 +1,6 @@
 /**
  * Defines a TeamMember class representing the properties of a team member object.
- * @author  Marko Elez
+ * @author  Marko Elez, Aaron Galang
  */
 public class TeamMember {
    private String name;
@@ -12,8 +12,8 @@ public class TeamMember {
    }
 
    /**
-    * startDate getter.
-    * @return startDate parameter.
+    * StartDate getter.
+    * @return StartDate parameter of team member object.
     */
    public Date getStartDate() {
       return startDate;
@@ -21,8 +21,8 @@ public class TeamMember {
 
    /**
     * TeamMember equality check.
-    * @param obj target object we are checking for equality against.
-    * @return true if obj is a TeamMember equal to this instance.
+    * @param obj Target object we are checking for equality against.
+    * @return Whether target TeamMember is equal to this instance.
     */
    public boolean equals(Object obj) {
       if (obj == null) return false;
@@ -32,7 +32,7 @@ public class TeamMember {
 
    /**
     * String representation of TeamMember instance
-    * @return string representation of this TeamMember's properties.
+    * @return String representation of this TeamMember's properties.
     */
    public String toString() {
       return name + ' ' + startDate.toString();

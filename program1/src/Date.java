@@ -1,12 +1,16 @@
 /**
-  
- @author  
+ * Defines a Date class representing a Date in mm/dd/yyyy format.
+ * @author  Marko Elez, Aaron Galang
  */
 public class Date {
    private int day;
    private int month;
    private int year;
-   
+
+   /**
+    * Date constructor - creates a date from its input.
+    * @param d String representation of a date.
+    */
    public Date(String d) {
       String[] tokens = d.split("/");
       month = Integer.parseInt(tokens[0]);
@@ -16,8 +20,12 @@ public class Date {
    
    public Date(Date d) {
       //this is a constructor
-   }      
-   
+   }
+
+   /**
+    * Date instance validity check.
+    * @return Whether this date if valid or not.
+    */
    public boolean isValid() {
       // get string representations for regex
       String d = Integer.toString(day);
@@ -50,7 +58,6 @@ public class Date {
          if (!leapYear) {
             return day <= 28;
          } else {
-            System.out.println("MONTH 2 - Day: " + day);
             return day <= 29;
          }
       // if this is a month with 30 days
@@ -61,21 +68,30 @@ public class Date {
          return day <= 31;
       }
    }
-   
+
+   /**
+    * String conversion override.
+    * @return String representation of date instance.
+    */
    @Override
    public String toString() {
       return month + "/" + day + "/" + year;
    }
-   
+
+   /**
+    * Date equality check.
+    * @param obj Target object we are checking for equality against.
+    * @return Whether target Date object is equal to this instance.
+    */
    @Override
    public boolean equals(Object obj) {
       if (obj == null) return false;
       else if (!(obj instanceof Date)) return false;
       else return ((Date) obj).month == month && ((Date) obj).day == day && ((Date) obj).year == year;
    }
+
    /**
-    *Main method for testing Date.java
-    *tests each method in Date.java
+    * Test bed main method for Date class
     */
    public static void main(String[] args){
       // creates a Date object for testing
