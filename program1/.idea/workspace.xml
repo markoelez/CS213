@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfde5875-fa0e-457e-8c75-01b75d7de0e7" name="Default Changelist" comment="" />
+    <list default="true" id="dfde5875-fa0e-457e-8c75-01b75d7de0e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/member-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/package-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/type-search-index.zip" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +16,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1XlPeAK7AT5JGyhZ9Pm0W2VqSe2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -40,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TeamMember">
+  <component name="RunManager" selected="Application.Prog1">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -129,8 +135,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TeamMember" />
         <item itemvalue="Application.Prog1" />
+        <item itemvalue="Application.TeamMember" />
         <item itemvalue="Application.Team" />
         <item itemvalue="Application.Date" />
         <item itemvalue="Application.Main" />
@@ -148,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581617800636</updated>
       <workItem from="1581617801824" duration="18448000" />
-      <workItem from="1581814738906" duration="373000" />
+      <workItem from="1581814738906" duration="725000" />
     </task>
     <servers />
   </component>
@@ -167,5 +173,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
