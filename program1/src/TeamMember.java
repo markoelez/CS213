@@ -38,23 +38,56 @@ public class TeamMember {
       return name + ' ' + startDate.toString();
    }
 
+   /**
+    * Main method for testing TeamMember.java
+    * Tests each method and constructor in TeamMember.java
+    */
    public static void main(String [] args) {
-      String testName = "testname";
-      Date testDate = new Date("12/12/1231");
+      // Creates TeamMember Object for testing
+      System.out.println();
+      String testName = "Turing";
+      Date testDate = new Date("6/23/1912");
       TeamMember tm = new TeamMember(testName, testDate);
 
-      // test date getter
-      if (!tm.getStartDate().equals(testDate)) throw new NullPointerException();
+      // use toString() method to display the content of the object
+      System.out.println("Testing constructor and toString() method by displaying content of the Test Object:");
+      System.out.println();
+      System.out.println("Expected Output:\tTuring 6/23/1912");
+      System.out.println("Actual Output:\t\t"+tm.toString());
+      System.out.println("\n");
 
-      // test equals method
-      Date testDate2 = new Date("12/12/1231");
-      Date testDate3 = new Date("12/12/1232");
-      TeamMember tm2 = new TeamMember("testname", testDate2);
-      TeamMember tm3 = new TeamMember("testname2", testDate2);
-      TeamMember tm4 = new TeamMember("testname", testDate3);
-      if (!tm.equals(tm2)) throw new NullPointerException();
-      if (tm.equals(tm3)) throw new NullPointerException();
-      if (tm.equals(tm4)) throw new NullPointerException();
+      // test getStartDate
+      System.out.println("Testing getStartDate()\n");
+      // Print start date
+      System.out.println("Print Start Date: ");
+      System.out.println("Expected Output:\t6/23/1912");
+      System.out.println("Actual Output:\t\t"+tm.getStartDate().toString());
+      System.out.println();
+      // Check if Date is Valid
+      System.out.println("Check if Date is Valid: ");
+      System.out.println("Expected Output:\ttrue");
+      System.out.println("Actual Output:\t\t"+tm.getStartDate().isValid());
+      System.out.println("\n");
 
+      //Testing the equals() method
+      System.out.println("Testing the .equals() method");
+      System.out.println();
+      //Case Equal
+      TeamMember tm2 = new TeamMember(testName, testDate);
+      System.out.println("Case 1, Equal TeamMember");
+      System.out.println("Expected Output:\ttrue");
+      System.out.println("Actual Output:\t\t"+tm.equals(tm2));
+      System.out.println();
+      //Case Name Unequal
+      tm2 = new TeamMember("Alan", testDate);
+      System.out.println("Case 2, Unequal Name");
+      System.out.println("Expected Output:\tfalse");
+      System.out.println("Actual Output:\t\t"+tm.equals(tm2));
+      System.out.println();
+      //Case Date Unequal
+      tm2 = new TeamMember(testName, new Date("2/14/2020"));
+      System.out.println("Case 3, Unequal Date");
+      System.out.println("Expected Output:\tfalse");
+      System.out.println("Actual Output:\t\t"+tm.equals(tm2));
    }
 }
